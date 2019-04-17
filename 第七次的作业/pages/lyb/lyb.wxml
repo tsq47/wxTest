@@ -1,0 +1,11 @@
+<!--pages/lyb/lyb.wxml-->
+<text class="h1">定单留言</text>
+<view class='msg-box'>
+  <form bindsubmit='FormSubmit'>
+  <view class="row">
+  <textarea class='text' fixed="true" type='text' placeholder="请写出您想对我们说的话或者建议(60字以内)" maxlength='80'   bindinput='bindTextAreaChange' value="{{message}}"></textarea>
+</view>
+ 
+<button bindtap='submit'>提交留言</button>
+</form>
+</view>
